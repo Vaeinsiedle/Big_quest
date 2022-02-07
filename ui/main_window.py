@@ -36,6 +36,15 @@ class MainWindow(QWidget):
             self.request.up_zoom()
         elif key == Qt.Key_PageDown:
             self.request.down_zoom()
+        elif key == Qt.Left:
+            self.request.left()
+        elif key == Qt.Right:
+            self.request.right()
+        elif key == Qt.Up:
+            self.request.up()
+        elif key == Qt.Down:
+            self.request.down()
+
         self.show_map()
 
 if __name__ == '__main__':
